@@ -1,0 +1,144 @@
+
+
+<div class="container-fluid">
+
+    <div class="row">  
+        
+        <div class="col-sm-6">
+        
+
+         
+
+
+
+  <div id="myCarousel" class="carousel slide" data-interval="false">
+
+  <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="https://s14.postimg.cc/bnwpgsqnl/pixel1.png" alt="">
+      </div>
+	  <div class="item">
+        <img src="https://s14.postimg.cc/k665l54w1/pixel2.png" alt="">
+      </div>
+	  <div class="item">
+        <img src="https://s14.postimg.cc/4xg87dycx/pixel5.png" alt="">
+      </div>
+	  <div class="item">
+        <img src="https://s14.postimg.cc/4kou178dd/pixel3.png" alt="">
+      </div>
+	  <div class="item">
+        <img src="https://s14.postimg.cc/almiy9n9t/pixel4.png" alt="">
+      </div>
+	  
+	 
+    </div>
+	
+	<div id="thumbCarousel">
+      <div data-target="#myCarousel" data-slide-to="0" class="thumb active"><img src="https://s14.postimg.cc/z24osq8kt/pixel1.png" alt="XZ" class="mc"></div>
+      <div data-target="#myCarousel" data-slide-to="1" class="thumb"><img src="https://s14.postimg.cc/l8gc3onp9/pixel2.png" alt="XZ" class="mc"></div>
+      <div data-target="#myCarousel" data-slide-to="2" class="thumb"><img src="https://s14.postimg.cc/8ttk3djcd/pixel5.png" alt="XZ" class="mc"></div>
+      <div data-target="#myCarousel" data-slide-to="3" class="thumb"><img src="https://s14.postimg.cc/4kou178d9/pixel3.png" alt="XZ" class="mc"></div>       
+    </div>
+  
+  </div>
+
+         
+
+        </div>
+       
+        <div class="col-sm-6">
+
+          <div class="desc-amt">
+
+            <div class="desc">          
+                 <p class="d_p">{{response.response.data.product.description}}</p>
+           </div> 
+
+            <div class="dolar">
+            <h3> {{response.response.data.product.product_name}} <span>(2)</span></h3>  
+            <span class=d-ll>{{response.response.data.product.price}}</span><br>
+            <section>
+                <label for="star-1">
+                  <svg width="255" height="240" viewBox="0 0 51 48">
+                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+                  </svg>
+                </label>
+                <label for="star-2">
+                  <svg width="255" height="240" viewBox="0 0 51 48">
+                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+                  </svg>
+                </label>
+                <label for="star-3">
+                  <svg width="255" height="240" viewBox="0 0 51 48">
+                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+                  </svg>
+                </label>
+                <label for="star-4">
+                  <svg width="255" height="240" viewBox="0 0 51 48">
+                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+                  </svg>
+                </label>
+                <label for="star-5">
+                  <svg width="255" height="240" viewBox="0 0 51 48">
+                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+                  </svg>
+                </label>
+              </section>  
+           </div>
+                
+            
+           
+       
+            <div  class="checkbox" >
+                <div class="row">
+                    <div class="col-sm-4 pd-i"> 
+                     <input type="checkbox" class="i-p c-b" id="Unchecked">&nbsp;&nbsp;
+                     <p>IN STOCK</p>
+                    </div>
+                </div>
+              
+            </div>
+               
+         
+            <div class="quantity">
+                <div class="row">
+                    <div class="col-6 q-wb"> 
+                       <h6 class="qty">Quantity</h6>&nbsp;&nbsp;                    
+                        <button class="inc" (click)="decrement()">-</button>
+                        <span>{{counter}}</span>
+                        <button  class="dec" (click)="increment()">+</button>
+                    </div>
+                </div>        
+            </div> 
+            
+            <br>
+                        
+            <div class="row buttons">
+                <div class="col-12">
+               <div class="row">
+               <div class="col-6">
+           <button class="btn  ac" >ADD TO CART</button> 
+             </div>
+             
+             <div class="col-6">
+           <button class="btn  btn-lg bn">BUY NOW</button>
+            </div>
+
+                </div> 
+                </div>
+              </div>
+            
+            </div>
+
+          </div>
+
+
+    </div>
+
+</div>
+
+    
+
+            
+      
+<router-outlet></router-outlet>

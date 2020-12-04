@@ -1,0 +1,9 @@
+@media only screen and (min-width: 768px){
+    .dropdown:hover .dropdown-menu 
+    {display: block;}
+    }
+    
+    
+    /* // .nav1{
+    // height: 6vh;
+    // } */

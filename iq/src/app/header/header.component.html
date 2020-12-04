@@ -1,0 +1,103 @@
+<!-- <nav class="topnav">
+    <div class="row no-gutters">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div>
+                <h5>Brand</h5>
+            </div>
+            <div class="float-right d-flex mt-n4">
+              <button class="cartnum" size="sm" disabled>{{cart_product}}</button>  
+                <div >
+                <img src="../../../assets/{{cartImg}}.svg"  class="cartbag" height="50px" width="50px"/>
+                </div>
+                  <p class="text-muted">{{this.language.mLparams[this.lang_dync].Your_Cart}}
+                    <br>
+                    ${{cart_price}}</p>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</nav>  
+<hr class="horl_line">
+<nav>
+    <div class="row no-gutters nav1">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div class="row">
+                <div class="col-md-3 col-sm-12">
+                    <div class="dropdown p-2">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Merchendise
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="input-group col-md-6 col-sm-12 pt-2">
+                  <input type="text" 
+                  placeholder="Search item..."
+                  class="form-control inputcolor topsearch" aria-label="Large" aria-describedby="inputGroup-sizing-xs">
+                  <div class="input-group-append mb-2">
+                      <span class="input-group-text inputcolor topsearchicon" id="inputGroup-sizing-sm"><img src="../../../assets/Search.svg" height="15px"
+                        width="15px" />  
+                          </span>
+                    </div>  
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <div class="dropdown p-2">
+                      <div class="d-flex">
+                        <img src="../../../assets/user.svg"  height="15px" width="15px" class="mt-2"/>
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton" type="button" 
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          My Account
+                        </button>
+                      </div>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">{{this.language.mLparams[this.lang_dync].my_profile}}</a>
+                          <a *ngIf="this.mode.mode == 3" class="dropdown-item btn" data-toggle="modal" data-target="#BecomeSellerModal">{{this.language.mLparams[this.lang_dync].become_seller}}</a>
+                          <a class="dropdown-item" href="#">{{this.language.mLparams[this.lang_dync].logout}}</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</nav>  
+
+
+
+
+
+<div class="modal fade" id="BecomeSellerModal" tabindex="-1" role="dialog" aria-labelledby="BecomeSellerModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="BecomeSellerModalLabel">{{this.language.mLparams[this.lang_dync].becomeSeller}}</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="getducwalletform" (ngSubmit)="onEnteredDucWalletaddr()" > 
+          <div class="form-group">
+            <label>{{this.language.mLparams[this.lang_dync].Enter_Your_Duc_Wallet_Address}}</label>
+            <input required formControlName="getducaddr" class="form-control" name="getducaddr">
+            <p class="text-muted">{{this.language.mLparams[this.lang_dync].paymentLossMsg}}</p>
+            <div *ngIf="logsubmitted && f.getducaddr.errors" >
+              <div *ngIf="f.getducaddr.errors.required" class="text-danger">
+                {{this.language.mLparams[this.lang_dync].addresrequired}}
+              </div>
+              <div *ngIf="f.getducaddr.errors.pattern" class="text-danger">
+                {{this.language.mLparams[this.lang_dync].invalidducaddr}}
+              </div>
+              </div>
+          </div>
+          <button type="submit" class="btn btn-primary float-right">{{this.language.mLparams[this.lang_dync].Confirm}}</button>
+        </form>
+    </div>
+  </div>
+</div> -->
