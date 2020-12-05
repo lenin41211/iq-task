@@ -1,9 +1,9 @@
 .ac,.bn{
   background-color: #ff9f00;
   color: #fff;
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 500;
-  width: 100%;
+  width: 80%;
   height: 50px;
   border-radius: 0px !important;
 }
@@ -25,7 +25,7 @@
 }
 
 .pict{
-  height: 200px;
+  height: 190px;
   width: 100%;
   cursor:pointer;
 }
@@ -34,11 +34,19 @@
 
 label {
   display: inline-block;
-  width: 50px;
+  width: 25px !important;
   
   cursor: pointer;
 }
 
+.pc-p{
+  text-align: center;
+  margin-bottom:10px;
+}
+
+.f-zs{
+  font-size: 20px;
+}
 svg {
     width: 90%;
     height: auto;
@@ -88,15 +96,21 @@ svg {
   
 }
 
+.desc-amt{
+  margin-top:70px;
+}
+
 .pd-i{
   font-size: 19px;
     margin-left: 25px;
 }
 
 .prod-ct{
-  margin-top:40px;
+  margin-top:150px;
   text-align: center;
 }
+
+
 
 
 
@@ -115,21 +129,21 @@ svg {
 
 #thumbCarousel{
 	max-width: 650px;
-  margin: 0px 5px 0px 45px;
-	overflow: hidden;
+	margin: 0 auto;
+
 	background: #fff;
+	
 }
 
 #thumbCarousel .thumb{
-	float: left;
-  margin-right: 10px;
-  margin-top: 10px;
+	float: left !important;
+	margin-right: 10px !important;
 	border: 1px solid #e6e6e6;
 	background: #fff;
 }
 
 #thumbCarousel .thumb:last-child{
-	margin-right: 0;
+  margin: 10px 10px 10px 20px;
 }
 
 .thumb:hover{
@@ -146,23 +160,5 @@ svg {
 
 .thumb.active img{
 	opacity: 1;
-  border: 1px solid #fafafa;
+  border: 1px solid #808080;
 }
-
-
-.mc{
-  height:70px;
-  width:70px;
-  margin: 5px;
-}
-
-
-
-.desc-amt{
-  margin-top:70px;
-}
-
-
-
-
-
