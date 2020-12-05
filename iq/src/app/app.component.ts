@@ -36,11 +36,11 @@ export class AppComponent {
                 "qty_left": 10,
                 "commonImages": [
                     {
-                        "is_main": true,
+                        "isMain": true,
                         "data": "http://iqnetwork.ddns.net:5003/test/Z01iphone-1.4-(520x540).png"
                     },
                     {
-                        "is_main": false,
+                        "isMain": false,
                         "data": "http://iqnetwork.ddns.net:5003/test/Z01iphone-1.4-(520x540).png"
                     }
                 ],
