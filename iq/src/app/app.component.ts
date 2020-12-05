@@ -99,6 +99,14 @@ export class AppComponent {
                           {
                               "isMain": false,
                               "data": "http://iqnetwork.ddns.net:5003/test/Z01Mackbook-1.1-(520x540).png"
+                          },
+                        {
+                              "isMain": false,
+                              "data": "http://iqnetwork.ddns.net:5003/test/Z01Mackbook-1.1-(520x540).png"
+                          },
+                        {
+                              "isMain": false,
+                              "data": "http://iqnetwork.ddns.net:5003/test/Z01Mackbook-1.1-(520x540).png"
                           }
                       ],
                       "in_stock": true,
