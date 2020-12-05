@@ -31,9 +31,6 @@ export class AppComponent {
                 "is_used": false,
                 "is_in_sets": true,
                 "units_per_set": 5,
-                "has_variants": false,
-                "price": 1000,
-                "qty_left": 10,
                 "commonImages": [
                     {
                         "is_main": true,
